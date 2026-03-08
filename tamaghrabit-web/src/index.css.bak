@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-andalusia-cream text-andalusia-charcoal font-sans overflow-x-hidden antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FBF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C59B65;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1C252C;
+}
+
+/* Swiper coverflow custom specific styles if needed */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
